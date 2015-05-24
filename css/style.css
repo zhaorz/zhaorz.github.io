@@ -6,6 +6,14 @@
  * Made By MaterializeCSS.com
  */
 
+header, main, footer {
+  padding-left: 240px;
+}
+
+header {
+  height: 0px;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -37,11 +45,18 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+  header, main, footer {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  header, main, footer {
+    padding-left: 0;
   }
 }
 
