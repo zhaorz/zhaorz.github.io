@@ -14,6 +14,22 @@ header {
   height: 0px;
 }
 
+li.logo {
+  height: 200px;
+  background-color: #26a69a;
+}
+
+li.logo:hover {
+  background-color: #26a69a;
+}
+
+.side-nav.fixed a.logo {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: lighter;
+  padding-top: 18px;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
