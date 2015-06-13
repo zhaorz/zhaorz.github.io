@@ -6,86 +6,79 @@
  * Made By MaterializeCSS.com
  */
 
-header, main, footer {
-  padding-left: 240px;
-}
-
-header {
-  height: 0px;
-}
-
 h1 {
-  font-weight: 200;
-  text-shadow: 0px 0px 20px #666666;
+    font-weight: 200;
+    text-shadow: 0px 0px 20px #666666;
 }
 
 li.logo {
-  height: 200px;
-  background-color: #26a69a;
+    height: 200px;
+    background-color: #26a69a;
 }
 
 li.logo:hover {
-  background-color: #26a69a;
+    background-color: #26a69a;
 }
 
 .side-nav.fixed a.logo {
-  color: #FFFFFF;
-  font-size: 48px;
-  font-weight: lighter;
-  padding-top: 18px;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: lighter;
+    padding-top: 18px;
 }
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+    color: #444;
 }
 
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 .button-collapse {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 800px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+.parallax-container .section {
+    padding-top: 150px;
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
+  @media only screen and (max-width : 992px) {
+      .parallax-container .section {
+          position: absolute;
+          top: 40%;
   }
   #index-banner .section {
-    top: 10%;
+      top: 10%;
   }
 
   header, main, footer {
-    padding-left: 0;
+      padding-left: 0;
   }
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
+    #index-banner .section {
+        top: 0;
   }
   header, main, footer {
-    padding-left: 0;
+      padding-left: 0;
   }
 }
 
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
