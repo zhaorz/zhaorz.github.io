@@ -24,19 +24,13 @@ section {
 }
 
 h2 {
-  font-size: 1.0em;
+  font-size: 0.9em;
   font-weight: 500;
 }
 
 p {
   font-size: 0.75em;
   line-height: 2em;
-}
-
-.subtle {
-  font-size: 0.65em;
-  font-weight: 300;
-  opacity: 0.5;
 }
 
 a {
@@ -135,6 +129,29 @@ footer a:hover {
 
 .grid-footer {
   padding: 0;
+}
+
+/**** CUSTOM STYLES ****/
+
+#hero-main {
+  float: left;
+  width: 100%;
+  font-weight: 300;
+  font-size: 8em;
+  margin-top: -0.34em;
+  margin-left: -0.15em;
+  margin-bottom: -0.1em;
+}
+
+#hero-sub {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.subtle {
+  font-size: 0.65em;
+  font-weight: 500;
+  opacity: 0.5;
 }
 
 
