@@ -45,6 +45,10 @@ a:hover {
   color: rgba(0, 0, 0, 0.9);
 }
 
+ul {
+  list-style: none;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -75,11 +79,6 @@ a:hover {
 }
 
 /**** NAVIGATION ****/
-
-ul {
-  list-style: none;
-  display: block;
-}
 
 nav {
   width: 100%;
