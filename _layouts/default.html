@@ -23,53 +23,13 @@
 
   <body>
 
-    <nav>
-    <div class="half left">
-      <ul class="menu-links">
-        <li><a href="mailto:richardz@andrew.cmu.edu?subject=Inquiry">email</a></li>
-      </ul>
-    </div>
-    <div class="half right">
-      <ul class="menu-links">
-        <li class="nav"><a href="{{ site.url }}">about</a></li>
-        <li class="nav"><a href="https://github.com/zhaorz">github</a></li>
-        <li class="nav"><a href="https://www.linkedin.com/pub/richard-zhao/aa/645/76">linkedin</a></li>
-        <li class="nav"><a href="{{ site.baseurl }}/blog">blog</a></li>
-      </ul>
-    </div>
-    </nav>
-
-
-
+    {% include top-nav.html %}
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <footer>
-    <section class="grid grid-footer">
-    <div class="half left">
-      <ul>
-        <li>Richard Zhao</li>
-        <li><a href="mailto:richardz@andrew.cmu.edu?subject=Inquiry">richardz@andrew.cmu.edu</a></li>
-        <li>Pittsburgh, Pennsylvania</li>
-      </ul>
-    </div>
-    <div class="half right">
-      <div class="grid">
-        <ul class="menu-links">
-          <li class="nav"><a href="#">resume</a></li>
-          <li class="nav"><a href="https://github.com/zhaorz">github</a></li>
-          <li class="nav"><a href="https://www.linkedin.com/pub/richard-zhao/aa/645/76">linkedin</a></li>
-          <li class="nav"><a href="#">blog</a></li>
-        </ul>
-      </div>
-      <p class="subtle">(c) Richard Zhao 2015</p>
-    </div>
-    </section>
-    </footer>
-
-
+    {% include footer.html %}
 
     {% include analytics.html %}
   </body>

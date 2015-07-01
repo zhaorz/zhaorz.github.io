@@ -1,8 +1,12 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Richard Zhao</title>
+    <title>{{ site.name }}</title>
+
+    {% include meta.html %}
 
     <!-- Force favicon refresh (for development) -->
     <link rel="shortcut icon" href="./favicon.ico"/>
@@ -13,28 +17,11 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500' rel='stylesheet' type='text/css'>
 
 
-    <!-- Scripts (load async) -->
-    <!--
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js" async></script>
-    -->
   </head>
+
   <body>
 
-    <nav>
-    <div class="half left">
-      <ul class="menu-links">
-        <li><a href="mailto:richardz@andrew.cmu.edu?subject=Inquiry">email</a></li>
-      </ul>
-    </div>
-    <div class="half right">
-      <ul class="menu-links">
-        <li class="nav"><a href="{{ site.url }}">about</a></li>
-        <li class="nav"><a href="https://github.com/zhaorz">github</a></li>
-        <li class="nav"><a href="https://www.linkedin.com/pub/richard-zhao/aa/645/76">linkedin</a></li>
-        <li class="nav"><a href="{{ site.url }}/blog">blog</a></li>
-      </ul>
-    </div>
-    </nav>
+    {% include top-nav.html %}
 
     <section class="grid">
     <div class="half left">
@@ -88,31 +75,7 @@
     </div>
     </section>
 
-    <footer>
-    <section class="grid grid-footer">
-    <div class="half left">
-      <ul>
-        <li>Richard Zhao</li>
-        <li><a href="mailto:richardz@andrew.cmu.edu?subject=Inquiry">richardz@andrew.cmu.edu</a></li>
-        <li>Pittsburgh, Pennsylvania</li>
-      </ul>
-    </div>
-    <div class="half right">
-      <div class="grid">
-        <ul class="menu-links">
-          <li class="nav"><a href="{{ site.url }}">about</a></li>
-          <li class="nav"><a href="https://github.com/zhaorz">github</a></li>
-          <li class="nav"><a href="https://www.linkedin.com/pub/richard-zhao/aa/645/76">linkedin</a></li>
-          <li class="nav"><a href="{{ site.url }}/blog">blog</a></li>
-        </ul>
-      </div>
-      <p class="subtle">(c) Richard Zhao 2015</p>
-    </div>
-    </section>
-    </footer>
-
-
-
+    {% include footer.html %}
 
   </body>
 </html>

@@ -1,7 +1,46 @@
-url: http://richard-zhao.com/
+title:            rz
+description:      Describe your website.
 
-exclude: [Gemfile, Gemfile.lock, LICENSE, README.md, CNAME]
+# Owner/author information
+name:           Richard Zhao
+email:          richardz@andrew.cmu.edu
+github:         zhaorz
+location:       "Pittsburgh, Pennsylvania"
 
-permalink:     /blog/:year/:month/:day/:title/
-paginate_path: /page:num
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+highlighter: pygments
+markdown:    kramdown
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      [
+                "lib", "config.rb", "Capfile", "config",
+                "log", "Rakefile", "Rakefile.rb", "tmp",
+                "CNAME", "Gemfile", "Gemfile.lock",
+              ]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Outputting
+paginate:      3
+paginate_path: blog/page:num
+timezone:      null
+
+# Markdown Processor
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
