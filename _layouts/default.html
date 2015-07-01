@@ -12,38 +12,64 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Force favicon refresh (for development) -->
+    <link rel="shortcut icon" href="./favicon.ico"/>
+
+    <!-- CSS  -->
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500' rel='stylesheet' type='text/css'>
+
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">About</a>
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-          </nav>
-        </header>
-      </div>
+    <nav>
+    <div class="half left">
+      <ul class="menu-links">
+        <li><a href="mailto:richardz@andrew.cmu.edu?subject=Inquiry">email</a></li>
+      </ul>
     </div>
+    <div class="half right">
+      <ul class="menu-links">
+        <li class="nav"><a href="{{ site.url }}">about</a></li>
+        <li class="nav"><a href="https://github.com/zhaorz">github</a></li>
+        <li class="nav"><a href="https://www.linkedin.com/pub/richard-zhao/aa/645/76">linkedin</a></li>
+        <li class="nav"><a href="{{ site.baseurl }}/blog">blog</a></li>
+      </ul>
+    </div>
+    </nav>
+
+
+
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+    <footer>
+    <section class="grid grid-footer">
+    <div class="half left">
+      <ul>
+        <li>Richard Zhao</li>
+        <li><a href="mailto:richardz@andrew.cmu.edu?subject=Inquiry">richardz@andrew.cmu.edu</a></li>
+        <li>Pittsburgh, Pennsylvania</li>
+      </ul>
     </div>
+    <div class="half right">
+      <div class="grid">
+        <ul class="menu-links">
+          <li class="nav"><a href="#">resume</a></li>
+          <li class="nav"><a href="https://github.com/zhaorz">github</a></li>
+          <li class="nav"><a href="https://www.linkedin.com/pub/richard-zhao/aa/645/76">linkedin</a></li>
+          <li class="nav"><a href="#">blog</a></li>
+        </ul>
+      </div>
+      <p class="subtle">(c) Richard Zhao 2015</p>
+    </div>
+    </section>
+    </footer>
+
+
 
     {% include analytics.html %}
   </body>
