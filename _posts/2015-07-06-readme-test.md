@@ -33,6 +33,8 @@ Mouse control is disabled while the application window is active. To quit, use
 
 Touch Calculator uses a real-time handwriting recognition engine. Its custom designed feature detection pipeline implements a novel method of projecting touch strokes in a n-dimensional feature space. The Technology section covers the technique in more detail.
 
+<!--excerpt-->
+
 ## Getting Started
 
 1. **Clone** into an empty directory.
