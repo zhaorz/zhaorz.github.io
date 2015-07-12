@@ -4,19 +4,32 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <title>{{ site.name }}</title>
+    <meta charset="UTF-8">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% include meta.html %}
 
-    <!-- Force favicon refresh (for development) -->
-    <link rel="shortcut icon" href="./favicon.ico"/>
+    <title>
+      {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+      {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+      {% endif %}
+    </title>
 
-    <!-- CSS  -->
+    <!-- CSS (use custom stylesheet for about page) -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/about-style.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
-
-    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Icons -->
+    <!--
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
+    -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 
   </head>
 
@@ -26,7 +39,6 @@
 
     <section class="grid">
     <div class="half left">
-      <h1 id="hero-main">rz</h1>
       <h2 id="hero-sub">Richard Zhao</h2>
     </div>
     <div class="half right">

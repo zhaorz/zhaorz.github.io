@@ -7,10 +7,11 @@ email:          richardz@andrew.cmu.edu
 github:         zhaorz
 location:       "Pittsburgh, Pennsylvania"
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# Site settings
 timezone:    America/New_York
 highlighter: pygments
 markdown:    kramdown
+excerpt_separator: "<!--excerpt-->"
 
 # Handling Reading
 safe:         false
@@ -28,6 +29,11 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 paginate:      3
 paginate_path: blog/page:num
 timezone:      null
+
+# Assets
+sass:
+  sass_dir:   _sass
+  style:      compressed
 
 # Markdown Processor
 kramdown:
