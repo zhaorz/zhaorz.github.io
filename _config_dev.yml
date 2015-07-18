@@ -4,7 +4,7 @@ email:       richardz@andrew.cmu.edu
 author:      Richard Zhao
 description: ""
 baseurl:     ""
-url:         "http://richard-zhao.com"
+url:         "http://localhost:4000"
 
 # Google analytics
 google_analytics:

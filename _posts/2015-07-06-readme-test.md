@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Readme test
 ---
 
@@ -11,6 +11,8 @@ richardz@andrew.cmu.edu
 
 This project was made for 15-112 in spring 2015, an introductory programming
 course taught by Professor David Kosbie and Professor Dave Andersen.
+
+<!--excerpt-->
 
 ## About
 
