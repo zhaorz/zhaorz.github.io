@@ -1,5 +1,6 @@
 ---
-layout: center
+layout: page
+title: Contact
 ---
 
-<h4><a href="mailto:richardz@andrew.cmu.edu">richardz@andrew.cmu.edu</a></h4>
+Feel free to reach me at <a href="mailto:richardz@andrew.cmu.edu">richardz@andrew.cmu.edu</a>.
