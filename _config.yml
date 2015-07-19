@@ -7,7 +7,7 @@ baseurl:     ""
 url:         "http://richard-zhao.com"
 
 # Google analytics
-google_analytics:
+google_analytics: 'UA-65056214-1'
 
 exclude:      [
                 "lib", "config.rb", "Capfile", "config",
@@ -56,7 +56,8 @@ share_stumbleupon: false
 share_hackernews: false
 
 # Build settings
-markdown:     kramdown
+markdown:     redcarpet
+highlighter:  pygments
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
