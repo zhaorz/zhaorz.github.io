@@ -6,9 +6,20 @@ layout: default
 
   <div class="posts">
     {% for post in paginator.posts %}
+      {% assign minutes = post.content | number_of_words | divided_by: 180 %}
+      {% if minutes == 0 %}
+        {% assign minutes = 1 %}
+      {% endif %}
       <div class="post py3">
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <p class="post-meta">
+        {% if post.minutes %}
+          {{ post.minutes }} minute read
+        {% else %}
+          {{ minutes }} minute read
+        {% endif %}
+        </p>
         <p class="post-summary">
           {% if post.summary %}
             {{ post.summary }}
