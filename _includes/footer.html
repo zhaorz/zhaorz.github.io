@@ -1,7 +1,7 @@
 <footer class="center">
   <div class="measure">
-    <small>
-      Theme: <a href="https://github.com/johnotander/pixyll">Pixyll</a>.
-    </small>
+    {% if site.show_social_icons %}
+      {% include social_links.html %}
+    {% endif %}
   </div>
 </footer>
