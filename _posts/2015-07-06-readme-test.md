@@ -1,9 +1,7 @@
 ---
 layout: post
-title: Readme test
+title: Touch Calculator
 ---
-
-# Touch Calculator
 
 Richard Zhao | 2015 | Carnegie Mellon University
 
