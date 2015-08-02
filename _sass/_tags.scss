@@ -12,8 +12,13 @@
 
 .tags li {
   display: inline;
+}
+
+.tags li a {
+  font-family: $heading-font-family;
   padding: 0.2em 0.5em;
   margin-right: 1em;
+  color: #fff;
   background-color: $light-gray;
   border-radius: 4px;
   -webkit-transition : all 0.3s ease-in-out;
@@ -22,11 +27,6 @@
   transition         : all 0.3s ease-in-out;
 }
 
-.tags li a {
-  font-family: $heading-font-family;
-  color: #fff;
-}
-
-.tags li:hover {
+.tags li a:hover {
   background-color: $mid-gray;
 }
