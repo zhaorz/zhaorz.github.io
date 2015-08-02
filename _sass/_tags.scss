@@ -1,0 +1,32 @@
+.tags-header {
+  padding-bottom: 0.75em;
+  border-bottom: thin solid #f3f3f3;
+}
+
+.tags {
+  padding: 0;
+  margin: 0;
+  float: left;
+  list-style-type: none;
+}
+
+.tags li {
+  display: inline;
+  padding: 0.2em 0.5em;
+  margin-right: 1em;
+  background-color: $light-gray;
+  border-radius: 4px;
+  -webkit-transition : all 0.3s ease-in-out;
+  -moz-transition    : all 0.3s ease-in-out;
+  -o-transition      : all 0.3s ease-in-out;
+  transition         : all 0.3s ease-in-out;
+}
+
+.tags li a {
+  font-family: $heading-font-family;
+  color: #fff;
+}
+
+.tags li:hover {
+  background-color: $mid-gray;
+}
