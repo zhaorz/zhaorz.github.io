@@ -1,0 +1,8 @@
+blog:
+  name: Blog
+css:
+  name: CSS
+python:
+  name: Python
+machine-learning:
+  name: Machine Learning

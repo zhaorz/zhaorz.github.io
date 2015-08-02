@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Touch Calculator
+tags: [blog, machine-learning, python]
 ---
 
 Richard Zhao | 2015 | Carnegie Mellon University
