@@ -17,7 +17,7 @@ layout: default
     </li>{% endfor %}
   </ul><br>
   {% endif %}
-  <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span><br>
+  <div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</div>
   {% if page.update_date %}
     <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
   {% endif %}
