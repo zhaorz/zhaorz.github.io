@@ -10,3 +10,5 @@ machine-learning:
   name: Machine Learning
 tips:
   name: Tips
+zsh:
+  name: zsh

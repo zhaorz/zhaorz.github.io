@@ -57,11 +57,14 @@ share_hackernews: false
 
 # Build settings
 markdown:     redcarpet
-#highlighter:  rouge
+#highlighter:  pygments
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
 sass:
   compressed: true
-gems:
-  - jekyll-sitemap
+gems:         [
+                "jekyll-paginate"
+              ]
+
+# - jekyll-sitemap
