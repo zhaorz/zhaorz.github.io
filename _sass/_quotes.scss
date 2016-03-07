@@ -1,0 +1,13 @@
+/**
+ * Quotes
+ */
+
+.quote {
+  font-family: $serif-font-family;
+  text-align: right;
+
+  &.large {
+    font-size: 2em;
+  }
+}
+

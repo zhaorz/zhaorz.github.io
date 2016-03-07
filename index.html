@@ -1,23 +1,26 @@
 ---
-layout: default
+layout: narrow
 ---
 
 <div class="home">
+  <p>
+  Builder, creator, hacker. I like to make things that I can point to
+  and call my own&mdash;things that have physical (or digital) matter and
+  can carry around a little bit of me wherever they go.
+  </p>
 
-  <h1 class="page-heading">Posts</h1>
+  <p>
+  Currently, I study Physics and Computer Science at Carnegie Mellon.
+  </p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p>
+  Talk to me about <a href="https://github.com/zhaorz">code</a>,
+  <a href="https://calligifphy.tumblr.com">calligraphy</a>, photography,
+  or <a href="https://www.strava.com/athletes/5390916">running</a>.
+  </p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="large quote">
+    <span style="font-family: Lato; font-weight: 300">&mdash;</span>rz
+  </div>
 </div>
+

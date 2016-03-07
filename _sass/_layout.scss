@@ -2,6 +2,32 @@
  * _layout.scss
  */
 
+/** Home **/
+
+.home {
+  margin-top: $spacing-unit;
+  padding-left: 4 * $spacing-unit;
+  padding-right: 4 * $spacing-unit;
+
+  p {
+    //font-size: 1.1em;
+    font-weight: 300;
+    //line-height: 2;
+  }
+
+  @include media-query($on-laptop) {
+    margin-top: 0;
+    padding-left: 2 * $spacing-unit;
+    padding-right: 2 * $spacing-unit;
+  }
+
+  @include media-query($on-palm) {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 /** Page **/
 .page-content {

@@ -13,6 +13,7 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.8;
 
 $code-font-family: "Fira Mono", "Menlo", monospace;
+$serif-font-family: "Cardo", "Georgia", serif;
 
 $header-font-weight: 700;
 
@@ -55,6 +56,7 @@ $on-laptop:        800px;
         "header",
         "footer",
         "layout",
+        "quotes",
         "social",
         "pagination",
         "syntax-highlighting"
