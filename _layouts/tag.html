@@ -6,31 +6,46 @@ layout: default
 
 {% if site.tags[page.tag] %}
   {% for post in site.tags[page.tag] %}
+
     {% assign minutes = post.content | number_of_words | divided_by: 180 %}
     {% if minutes == 0 %}
       {% assign minutes = 1 %}
     {% endif %}
-    <div class="post py3">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-        <h2 class="h1 post-title">{{ post.title }}</h2>
-      </a>
+
+    <div class="post-header">
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+
       {% if post.tags != empty %}
       <ul class="tags">
         {% for tag in post.tags %}
         <li>
           <a href="/blog/tag/{{ tag }}">{{ site.data.tags[tag].name }}</a>
         </li>{% endfor %}
-      </ul><br>
+      </ul>
       {% endif %}
-      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-      <p class="post-meta small">
+    </div>
+
+    <div class="post-meta">
+      {% if post.date %}
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+      {% endif %}
+      {% if post.author %}
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">{{ post.author }}</span>
+      </span>
+      {% endif %}
+
+      <p>
       {% if post.minutes %}
-        {{ post.minutes }} minute read
+      {{ post.minutes }} minute read
       {% else %}
-        {{ minutes }} minute read
+      {{ minutes }} minute read
       {% endif %}
       </p>
     </div>
+
   {% endfor %}
 {% else %}
   <p>There are no posts for this tag.</p>

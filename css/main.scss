@@ -18,7 +18,7 @@ $spacing-unit:     30px;
 
 $text-color:       #444;
 $background-color: #fdfdfd;
-$brand-color:      #1EFFAD;
+$brand-color:      #00BCD4;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -51,5 +51,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
+        "pagination",
         "syntax-highlighting"
 ;

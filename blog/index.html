@@ -12,8 +12,8 @@ layout: default
     {% endif %}
     <div class="post">
       <div class="post-header">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          {{ post.title }}</a>
+        <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+            {{ post.title }}</a></h2>
 
         {% if post.tags != empty %}
         <ul class="tags">
