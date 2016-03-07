@@ -15,6 +15,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://richard-zhao.com" # the base hostname & protocol for your site
 twitter_username:
 github_username: zhaorz
+disqus_shortname:   richardzhao
 
 # Outputting
 paginate:      3
