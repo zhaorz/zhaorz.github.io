@@ -2,10 +2,9 @@
  * Site header
  */
 .site-header {
-  margin-top: 10px;
+  margin-top: 30px;
   min-height: 56px;
 
-  // Positioning context for the mobile navigation icon
   position: relative;
   display: flex;
   justify-content: center;
@@ -23,6 +22,11 @@
   &:visited {
     color: $grey-color-dark;
   }
+
+  &:hover {
+    text-decoration: none;
+    box-shadow: inset 0 -1.5px $brand-color;
+  }
 }
 
 .site-nav {
@@ -31,14 +35,15 @@
   justify-content: center;
   align-items: center;
 
-  .menu-icon {
-    display: none;
-  }
-
   .page-link {
     font-weight: 200;
     color: $text-color;
     line-height: $base-line-height;
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: inset 0 -1.5px $brand-color;
+    }
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -184,7 +189,7 @@
  * Posts
  */
 .post-header {
-  margin-bottom: 0;
+  margin-bottom: 5px;
   @extend %clearfix;
 
   .post-title {
@@ -200,6 +205,11 @@
     display: inline block;
     float: left;
     color: $text-color;
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: inset 0 -1.5px $brand-color;
+    }
   }
 
   .tags {
