@@ -9,7 +9,7 @@
 title: Richard Zhao
 email: richardz@andrew.cmu.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Student, calligrapher, and running enthusiast.
+  Learner, calligrapher, and running enthusiast.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://richard-zhao.com" # the base hostname & protocol for your site

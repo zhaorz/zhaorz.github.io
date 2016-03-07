@@ -257,6 +257,37 @@
 
 }
 
+.narrow {
+  padding-right: 2 * $spacing-unit;
+  padding-left: 2 * $spacing-unit;
+
+  @include media-query($on-laptop) {
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+  }
+
+  @include media-query($on-palm) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+}
+
+div.image.medium {
+  width: 300px;
+  height: 300px;
+}
+
+div.image.circular {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+div.horizontal.divider {
+  margin-bottom: $spacing-unit;
+}
+
+
 /**
  * Tags
  */

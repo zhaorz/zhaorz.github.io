@@ -109,6 +109,7 @@ a {
  * Paragraphs
  */
 p {
+  line-height: $base-line-height;
 
   a {
     color: $text-color;
@@ -153,21 +154,23 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  font-family: $code-font-family;
 }
 
 code {
-  padding: 1px 5px;
+  color: darken($brand-color, 5%);
+  padding: 1px 3px;
+  font-size: 0.9em;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 18px 22px;
   overflow-x: auto;
+  border-left: 2px solid $brand-color;
 
   > code {
+    font-size: 0.8em;
+    color: $text-color;
     border: 0;
     padding-right: 0;
     padding-left: 0;
@@ -194,6 +197,11 @@ pre {
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
 }
 
 
