@@ -1,0 +1,14 @@
+blog:
+  name: Blog
+css:
+  name: CSS
+jekyll:
+  name: Jekyll
+python:
+  name: Python
+machine-learning:
+  name: Machine Learning
+tips:
+  name: Tips
+zsh:
+  name: zsh
