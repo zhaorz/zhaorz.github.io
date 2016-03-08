@@ -91,11 +91,12 @@
 
 .post-header {
   margin-bottom: 5px;
+  position: relative;
+
   @extend %clearfix;
 
   .post-title {
     margin-bottom: 0;
-    display: inline block;
     float: left;
     color: $text-color;
     font-size: 2em;
@@ -103,7 +104,6 @@
 
 
   .post-link {
-    display: inline block;
     float: left;
     color: $text-color;
 
@@ -114,11 +114,14 @@
   }
 
   .tags {
+    list-style-type: none;
+    position: absolute;
     padding: 0;
     margin: 0;
-    display: inline block;
-    float: right;
-    list-style-type: none;
+    right: 0;
+    top: 50%;
+    height: 2em;
+    margin-top: -1em;
 
 
     li {
