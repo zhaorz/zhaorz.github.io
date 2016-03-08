@@ -1,0 +1,42 @@
+/**
+ * Pagination
+ */
+
+.pagination {
+  @extend %clearfix;
+
+  .left {
+    display: inline block;
+    float: left;
+  }
+
+  .right {
+    display: inline block;
+    float: right;
+  }
+
+  .pagination-item {
+    padding: 0.2em 0.5em;
+    color: $brand-color;
+    border: 2px solid $brand-color;
+
+    &:hover {
+      color: #fff;
+      border-color: $brand-color;
+      text-decoration: none;
+      background-color: $brand-color;
+    }
+  }
+
+  .disabled {
+    color: lighten($text-color, 30%);
+    border-color: lighten($text-color, 30%);
+
+    &:hover {
+      color: lighten($text-color, 30%);
+      border-color: lighten($text-color, 30%);
+      background-color: #fff;
+    }
+  }
+
+}

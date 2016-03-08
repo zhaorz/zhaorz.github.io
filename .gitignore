@@ -1,3 +1,6 @@
+### Jekyll ###
+vendor
+
 ### Windows ###
 # Windows image file caches
 Thumbs.db
@@ -46,6 +49,7 @@ Temporary Items
 .apdisk
 
 ### Vim ###
+*.swp
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
 *.un~

@@ -1,0 +1,31 @@
+/**
+ * _social.scss
+ */
+
+.social {
+  margin-bottom: $spacing-unit;
+
+  .label {
+    color: lighten($text-color, 20%);
+    margin-bottom: 0.5em;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2em;
+    }
+
+    i {
+      font-size: 3em;
+      transition: all 150ms linear;
+      padding-bottom: 4px;
+
+      &:hover {
+        box-shadow: inset 0 -4px $brand-color;
+      }
+    }
+  }
+}
