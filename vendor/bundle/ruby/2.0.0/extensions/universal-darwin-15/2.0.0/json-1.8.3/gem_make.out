@@ -1,0 +1,14 @@
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/json-1.8.3/ext/json
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -r ./siteconf20160306-79840-1yxgedn.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/json-1.8.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" install
+installing default libraries

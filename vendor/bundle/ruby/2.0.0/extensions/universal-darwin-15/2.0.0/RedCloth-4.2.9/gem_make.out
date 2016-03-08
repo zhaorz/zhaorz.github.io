@@ -1,0 +1,23 @@
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/RedCloth-4.2.9/ext/redcloth_scan
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -r ./siteconf20160306-79840-atcgzd.rb extconf.rb
+checking for main() in -lc... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/extensions/universal-darwin-15/2.0.0/RedCloth-4.2.9/mkmf.log
+
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/RedCloth-4.2.9/ext/redcloth_scan
+make "DESTDIR=" clean
+
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/RedCloth-4.2.9/ext/redcloth_scan
+make "DESTDIR="
+compiling redcloth_attributes.c
+compiling redcloth_inline.c
+compiling redcloth_scan.c
+linking shared-object redcloth_scan.bundle
+
+current directory: /Users/Richard/Documents/web/zhaorz.github.io/vendor/bundle/ruby/2.0.0/gems/RedCloth-4.2.9/ext/redcloth_scan
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 redcloth_scan.bundle ./.gem.20160306-79840-3rfuni
+installing default redcloth_scan libraries
