@@ -14,7 +14,7 @@ linkedin: zhaorz
 facebook: "richard.zhao.7"
 
 # Outputting
-paginate:           3
+paginate:           5
 paginate_path:      "blog/page:num"
 excerpt_separator:  "<!--excerpt-->"
 
