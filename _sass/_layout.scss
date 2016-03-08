@@ -29,6 +29,25 @@
 }
 
 
+.extra-narrow {
+  margin-top: $spacing-unit;
+  padding-left: 3 * $spacing-unit;
+  padding-right: 3 * $spacing-unit;
+
+  @include media-query($on-laptop) {
+    margin-top: 0;
+    padding-left: 2 * $spacing-unit;
+    padding-right: 2 * $spacing-unit;
+  }
+
+  @include media-query($on-palm) {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
 /** Page **/
 .page-content {
   padding: $spacing-unit 0;

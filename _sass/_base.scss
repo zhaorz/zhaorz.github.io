@@ -129,6 +129,11 @@ p {
     }
   }
 
+  &.small {
+    font-size: 0.8em;
+    color: lighten($text-color, 25%);
+  }
+
 }
 
 
