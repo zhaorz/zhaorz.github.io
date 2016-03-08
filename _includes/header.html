@@ -5,12 +5,15 @@
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">
-      <a class="page-link" href="{{ site.baseurl }}/about/">
-        About</a>
-      <a class="page-link" href="{{ site.baseurl }}/blog/">
-        Blog</a>
-      <a class="page-link" href="{{ site.baseurl }}/contact/">
-        Contact</a>
+      {% for item in site.data.nav %}
+        {% if page.url == item.url %}
+          <a class="page-link active" href="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title }}</a>
+        {% else %}
+          <a class="page-link" href="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
     </nav>
 
   </div>
