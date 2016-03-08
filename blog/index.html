@@ -4,49 +4,18 @@ layout: default
 
 <div class="post-list">
   {% for post in paginator.posts %}
-  {% assign minutes = post.content | number_of_words | divided_by: 180 %}
-  {% if minutes == 0 %}
-  {% assign minutes = 1 %}
-  {% endif %}
   <div class="post">
-    <div class="post-header">
-      <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          {{ post.title }}</a></h2>
 
-      {% if post.tags != empty %}
-      <ul class="tags">
-        <li>
-          <i class="fa fa-tags"></i>
-        </li>
-        {% for tag in post.tags %}
-        <li>
-          <a href="/blog/tag/{{ tag }}">{{ site.data.tags[tag].name }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
-
-    <div class="post-meta">
-      <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-
-      <p>
-      {% if post.minutes %}
-      {{ post.minutes }} minute read
-      {% else %}
-      {{ minutes }} minute read
-      {% endif %}
-      </p>
-    </div>
-
+    {% include post-header.html %}
 
     <p class="post-summary">
-    {% if post.summary %}
-    {{ post.summary }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
+      {% if post.summary %}
+        {{ post.summary }}
+      {% else %}
+        {{ post.excerpt }}
+      {% endif %}
     </p>
+
   </div>
   {% endfor %}
 </div>
