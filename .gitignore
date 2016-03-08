@@ -1,5 +1,6 @@
 ### Jekyll ###
 vendor
+.jekyll-metadata
 
 ### Windows ###
 # Windows image file caches
