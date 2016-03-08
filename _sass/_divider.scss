@@ -1,0 +1,37 @@
+/**
+ * _divider.scss
+ */
+
+h1, h2, h3, h4, h5, h6 {
+
+  &.horizontal.divider {
+    display: table;
+    white-space: nowrap;
+    height: auto;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &:before {
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    width: 50%;
+    background-position: right 1em top 50%;
+    background-repeat: no-repeat;
+    background-image: url(/img/divider.png);
+  }
+
+  &:after{
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    width: 50%;
+    background-position: left 1em top 50%;
+    background-repeat: no-repeat;
+    background-image: url(/img/divider.png);
+  }
+
+}

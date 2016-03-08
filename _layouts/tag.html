@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<h1 class="tags-header">{{ site.data.tags[page.tag].name }}</h1>
+<h2 class="horizontal divider">
+  <i class="fa fa-tag"></i>
+  {{ site.data.tags[page.tag].name }}
+</h2>
 
 {% if site.tags[page.tag] %}
   {% for post in site.tags[page.tag] %}
