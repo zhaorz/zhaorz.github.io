@@ -20,11 +20,8 @@ excerpt_separator: "<!--excerpt-->"
 exclude: [vendor]
 
 # Build settings
-markdown: redcarpet
-
-# Markdown processors
-redcarpet:
-  extensions: [fenced_code_blocks]
+markdown: kramdown
+highlighter: rouge
 
 gems:         [
   "jekyll-paginate"
