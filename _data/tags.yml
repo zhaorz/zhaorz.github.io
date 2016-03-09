@@ -10,5 +10,9 @@ machine-learning:
   name: Machine Learning
 tips:
   name: Tips
+tmux:
+  name: tmux
+vim:
+  name: vim
 zsh:
   name: zsh
