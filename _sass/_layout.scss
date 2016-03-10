@@ -155,6 +155,22 @@ article {
 
 }
 
+.more {
+  text-align: right;
+
+  a {
+    padding: 0.2em 0.5em;
+    border: 2px solid lighten($text-color, 20%);
+
+    &:hover {
+      color: #fff;
+      border-color: $brand-color;
+      text-decoration: none;
+      background-color: $brand-color;
+    }
+  }
+}
+
 
 .post-content {
   margin-bottom: $spacing-unit;

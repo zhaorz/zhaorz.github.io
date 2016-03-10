@@ -17,6 +17,12 @@ arbitrary number of shell instances within a single process. You can have one
 shell running a localhost right next to another one that's free to run git commands
 and keep them both in a single terminal window.
 
+Installation:
+
+~~~ sh
+$ brew install tmux
+~~~
+
 To use tmux, start a **session** ([what is a session?](#what-is-a-session-anyways))
 by navigating to the primary directory you want to work in and running
 
