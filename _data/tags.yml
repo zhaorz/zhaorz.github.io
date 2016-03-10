@@ -12,6 +12,8 @@ tips:
   name: Tips
 tmux:
   name: tmux
+unix:
+  name: Unix
 vim:
   name: vim
 zsh:

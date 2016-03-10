@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize your zsh prompt
-tags: [zsh, tips]
+tags: [zsh]
 ---
 
 ![zsh prompt]({{ site.baseurl }}/img/2015-08-26-zsh-prompt/zsh-splash.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simple Jekyll Tags
-tags: [jekyll, tips]
+tags: [jekyll]
 ---
 
 Jekyll + Github Pages is a streamlined platform for hosting static websites (like this one). Jekyll provides default support for tags, but a little extra work needs to be done to create tag pages. I've read through a lot of great, existing solutions, and I'll try to summarize and simplify them here.
