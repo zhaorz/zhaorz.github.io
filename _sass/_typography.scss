@@ -38,18 +38,81 @@ cite {
   }
 }
 
-/** Keyboard **/
+/** Misc **/
 kbd {
   font-family: $code-font-family;
-  font-size: 0.7em;
-  font-weight: 700;
-  font-style: italic;
-  color: lighten($text-color, 20%);
-  margin-left: 2px;
-  margin-right: 2px;
-  border: 1px solid $text-color;
-  border-radius: 2px;
-  padding: 3px;
-  box-shadow: 2px 2px lighten($text-color, 50%);
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+mark {
+  color: $text-color;
+  font-size: 0.9em;
+  padding: 0 0.1em;
+  background-color: lighten($brand-color, 50%);
+}
+
+/** Forms **/
+fieldset {
+  margin-bottom: $spacing-unit;
+  border: 0;
+  padding: 30px;
+}
+
+legend {
+  width: 100%;
+  padding: 0.3em 0;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+label {
+  font-size: 1em;
+  display: block;
+  margin: 0.25em 0;
+}
+
+select {
+  height: 2.25em;
+  background-color: #fff;
+}
+
+select,
+input,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  font-size: 1em;
+  font-weight: 200;
+  display: block;
+  margin: 0.25em 0;
+  padding: 0.5em 0.6em;
+  border: 1px solid $grey-color-light;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 3px;
+  vertical-align: middle;
+
+  &:focus {
+    outline: none !important;
+    border-color: $brand-color;
+  }
 }
 

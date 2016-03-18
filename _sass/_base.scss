@@ -163,6 +163,12 @@ code {
   font-family: $code-font-family;
 }
 
+var {
+  color: darken($brand-color, 5%);
+  padding: 1px 3px;
+  font-size: 0.9em;
+}
+
 code {
   color: darken($brand-color, 5%);
   padding: 1px 3px;

@@ -1,0 +1,29 @@
+/**
+ * _buttons.scss
+ */
+
+.button {
+  font-size: 16px;
+  padding: 0.5em 1em;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 0;
+  color: $text-color;
+  background-color: $grey-color-light;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+
+  &:hover {
+    background-color: darken($grey-color-light, 10%);
+  }
+
+  &.primary {
+    color: #fff;
+    background-color: $brand-color;
+
+    &:hover {
+      background-color: darken($brand-color, 5%);
+    }
+  }
+}
+
