@@ -3,7 +3,9 @@
  */
 
 hr {
-  color: lighten($text-color, 50%);
+  border: 0;
+  height: 12px;
+  box-shadow: inset 0 1px $grey-color-light;
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
 }
@@ -40,6 +42,8 @@ cite {
 
 /** Misc **/
 kbd {
+  margin-left: 2px;
+  margin-right: 2px;
   font-family: $code-font-family;
   display: inline-block;
   padding: 3px 5px;

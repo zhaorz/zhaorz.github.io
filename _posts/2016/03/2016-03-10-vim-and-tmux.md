@@ -49,7 +49,7 @@ at the zeroth **window** in our session, which is running a process, `zsh`.
 ## Windows
 
 A *session* consists of one or more *windows*. To create another window, use the
-keystroke `C-b c` (`ctrl+b` then `c`).
+keystroke <kbd>C-b c</kbd> (<kbd>ctrl+b</kbd> then <kbd>c</kbd>).
 
 ![tmux]({{ site.baseurl }}/img/vim-and-tmux/windows.png)
 
@@ -59,16 +59,16 @@ the session).
 
 To cycle between windows, you have the following options:
 
-key     | action
---------| ------
-`C-b n` | next
-`C-b p` | previous
-`C-b k` | goto window `k`
+key              | action
+--------         | ------
+<kbd>C-b n</kbd> | next
+<kbd>C-b p</kbd> | previous
+<kbd>C-b k</kbd> | goto window `k`
 
 ## Prefix & tmux.conf
 
-Now's a good time to decide whether or not you like the default prefix, `C-b`.
-Personally, I prefer `C-a` since "a" is closer to the control key than b.
+Now's a good time to decide whether or not you like the default prefix, <kbd>C-b</kbd>.
+Personally, I prefer <kbd>C-a</kbd> since "a" is closer to the control key than b.
 
 If you do want to change this, create a file named `.tmux.conf` in your home
 directory, and add the following lines in (and replace `C-a` with your preferred
@@ -93,8 +93,10 @@ If a session is a collection of windows, then a window must but a collection of
 
 ![tmux]({{ site.baseurl }}/img/vim-and-tmux/splits.png)
 
-Use `prefix %` to create a vertical split and `prefix "` for a horizontal split.
-(I'm using `prefix` instead of `C-b` or `C-a` for the rest of the article.)
+Use <kbd>prefix %</kbd> to create a vertical split and <kbd>prefix "</kbd> for a
+horizontal split. (I'm using `prefix` instead of <kbd>C-b</kbd> or <kbd>C-a</kbd>
+for the rest of the article.)
+
 In my opinion, these keybindings make absolutely no sense. Perhaps keyboards were
 a bit different when tmux was written. So lets remap them to something a little
 easier to remember:
@@ -111,14 +113,14 @@ On my keyboard, `\` shares a key with the pipe character, `|`, which looks like
 a horizontal divider. And `-` is about as close as you can get to a vertical
 divider, so those were the keys I chose.
 
-You can close panes and windows with `prefix x`, by sending an EOF symbol with
-`C-d`, or by typing `logout`.
+You can close panes and windows with <kbd>prefix x</kbd>, by sending an EOF symbol
+with <kbd>C-d</kbd>, or by typing `logout`.
 
 ## Sane Pane Navigation
 
-The default way of moving between panes is using `prefix o` to cycle. If you like
-vim keybindings, the following bindings will allow you to use `prefix [hjkl]` to
-jump to the next pane in a given direction.
+The default way of moving between panes is using <kbd>prefix o</kbd> to cycle.
+If you like vim keybindings, the following bindings will allow you to use
+<kbd>prefix [hjkl]</kbd> to jump to the next pane in a given direction.
 
 ~~~ conf
 # Navigate panes with hjkl
@@ -146,8 +148,8 @@ set -g mouse-select-window on
 
 ## Detaching and reattaching
 
-To **detach** from your current session, just run `prefix d`. To reattach to an
-existing target session, run
+To **detach** from your current session, just run <kbd>prefix d</kbd>.
+To reattach to an existing target session, run
 
 ~~~ sh
 $ tmux attach -t target_name

@@ -160,7 +160,8 @@ article {
 
   a {
     padding: 0.2em 0.5em;
-    border: 2px solid lighten($text-color, 20%);
+    border: 1px solid lighten($text-color, 20%);
+    font-weight: 400;
 
     &:hover {
       color: #fff;
