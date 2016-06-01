@@ -1,5 +1,7 @@
 blog:
   name: Blog
+config:
+  name: Configuration
 css:
   name: CSS
 jekyll:
