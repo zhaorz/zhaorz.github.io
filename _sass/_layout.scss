@@ -5,30 +5,16 @@
 /** Home **/
 
 .home {
-  margin-top: $spacing-unit;
-  padding-left: 4 * $spacing-unit;
-  padding-right: 4 * $spacing-unit;
+  margin-top: 2 * $spacing-unit;
 
   p {
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-weight: 300;
-    //line-height: 2;
+    line-height: 2;
   }
 
   a {
     font-weight: 700;
-  }
-
-  @include media-query($on-laptop) {
-    margin-top: 0;
-    padding-left: 2 * $spacing-unit;
-    padding-right: 2 * $spacing-unit;
-  }
-
-  @include media-query($on-palm) {
-    margin-top: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -231,5 +217,3 @@ div.horizontal.divider {
   padding-bottom: 0.75em;
   border-bottom: thin solid #f3f3f3;
 }
-
-
