@@ -1,8 +1,7 @@
 # Site settings
 title:          Richard Zhao
 email:          richardz@andrew.cmu.edu
-description: >
-  Learner, calligrapher, and running enthusiast.
+description:
 
 baseurl:  "" # the subpath of your site, e.g. /blog
 url:      "http://richard-zhao.com" # the base hostname & protocol for your site
@@ -31,4 +30,3 @@ exclude:      [
 gems:         [
   "jekyll-paginate"
   ]
-

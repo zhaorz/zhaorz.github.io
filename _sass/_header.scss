@@ -19,10 +19,13 @@
   line-height: 56px;
   margin-bottom: 0;
   text-transform: lowercase;
+  color: $brand-color;
+  font-family: $code-font-family;
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $brand-color;
+    /* color: $grey-color-dark; */
   }
 
   &:hover {
