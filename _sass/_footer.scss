@@ -2,9 +2,27 @@
  * _footer.scss
  */
 
+
+/* Sticky footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 90px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+}
+
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
 }
 
 .footer-contacts {
@@ -12,6 +30,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 300;
+  padding: $spacing-unit 0;
 
   // Gaps between nav items, but not on the last one
   a {
