@@ -1,12 +1,8 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
-
-
-// Our variables
-$base-font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "HK Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -34,7 +30,6 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -53,6 +48,7 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "mixins",
         "header",
         "footer",
         "layout",
@@ -66,3 +62,8 @@ $on-laptop:        800px;
         "typography",
         "syntax-highlighting"
 ;
+
+@include font-face('HK Grotesk', '../fonts/HKGrotesk-Light', 300, normal, otf);
+@include font-face('HK Grotesk', '../fonts/HKGrotesk-Regular', 400, normal, otf);
+@include font-face('HK Grotesk', '../fonts/HKGrotesk-Medium', 500, normal, otf);
+@include font-face('HK Grotesk', '../fonts/HKGrotesk-Bold', 700, normal, otf);
