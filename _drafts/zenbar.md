@@ -1,0 +1,44 @@
+---
+layout: post
+title: Zenbar
+tags: [config]
+---
+
+![Zenbar]({{ site.baseurl }}/img/zenbar/splash.jpg)
+
+Zenbar is an unobtrusive status bar for your workspace. Recently, I've been
+experimenting a bit with i3wm on Arch Linux, and one of the things I wanted to
+replicate on macOS was its status
+bar. [Clone it on Github](https://github.com/zhaorz/zenbar).
+
+<!--excerpt-->
+
+The stock menu bar on macOS is good for performing *actions* (such as File >
+Save). Menu bars lack the idea of monitoring machine status (battery level, cpu
+load, etc.).  The configuration of the stock menu bar is also limited to a
+choice between a light and a dark theme.
+
+## Ubersicht
+
+After looking around, I decided to try out
+[Ubersicht](http://tracesof.net/uebersicht/), an application that allows you to
+put widgets on the desktop. Widgets are written as web components, which means
+you can write your own widgets if you know a bit of HTML and CSS.
+
+The design is quite similar to the status bars of various nix window managers.
+Each widget specifies an executable command (e.g. `date`) which provides an
+output string and a function that performs final formating on that
+output. Various options such as refresh rate and CSS styling are also available.
+
+Unfortunately, there doesn't seem to be a relative import system in place, so
+each of the widgets are pretty much standalone. It may be possible to have some
+`style.css` file and import it from all your widgets, but it's a nontrivial
+configuration.
+
+## zenbar
+
+So, I forked the existing [nerdbar](https://github.com/herrbischoff/nerdbar.widget)
+widget and make a few modifications to suit my tastes. Most of the changes were
+minor aesthetic ones, as nerdbar was already pretty minimal. It does add an
+extra volume widget, if you've been looking for one. Check out
+[zenbar on Github](https://github.com/zhaorz/zenbar)!
