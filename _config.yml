@@ -13,6 +13,7 @@ github:   zhaorz
 disqus:   richardzhao
 linkedin: zhaorz
 facebook: "richard.zhao.7"
+resume:   /assets/richard-zhao-resume.pdf
 
 # Outputting
 permalink:          /blog/:year/:month/:day/:title/
