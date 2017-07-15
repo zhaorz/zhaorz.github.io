@@ -1,0 +1,29 @@
+<div class="project-header">
+
+  <h2>
+    <a href="{{ project.url }}" class="project-link">
+      {{ project.name }}</a>
+  </h2>
+
+  {% if project.tags != empty %}
+  <ul class="tags">
+    <!-- <li>
+         <i class="fa fa-tags"></i>
+         </li> -->
+    {% for tag in project.tags %}
+    <li>
+      {{ tag }}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+</div>
+
+<div class="project-meta">
+  {% if project.date %}
+    <time>
+      {{ project.date }}
+    </time>
+  {% endif %}
+</div>
