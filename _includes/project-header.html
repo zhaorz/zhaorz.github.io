@@ -3,13 +3,17 @@
   <h2>
     <a href="{{ project.url }}" class="project-link">
       {{ project.name }}</a>
+    <span class="small">
+      &nbsp;
+      <i class="fa fa-external-link"></i>
+    </span>
   </h2>
 
-  {% if project.tags != empty %}
+  {% if project.tags %}
   <ul class="tags">
-    <!-- <li>
-         <i class="fa fa-tags"></i>
-         </li> -->
+    <li>
+      <i class="fa fa-terminal"></i>
+    </li>
     {% for tag in project.tags %}
     <li>
       {{ tag }}
@@ -21,9 +25,18 @@
 </div>
 
 <div class="project-meta">
+
   {% if project.date %}
     <time>
       {{ project.date }}
     </time>
   {% endif %}
+
+  {% if project.repo %}
+    <a class="github-button"
+       href="https://github.com/{{ site.github }}/{{ project.repo }}"
+       data-show-count="true"
+       aria-label="Star zhaorz/{{ project.repo }} on GitHub">Star</a>
+  {% endif %}
+
 </div>

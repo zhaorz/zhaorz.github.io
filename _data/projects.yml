@@ -1,9 +1,11 @@
 - name: Flow on the Go
+  url: http://www.richard-zhao.com/FlowOnTheGo
+  repo: FlowOnTheGo
   date: May 2017
   tags: [CUDA, C++, ARM Neon]
   brief: Fast, accurate optical flows on mobile GPUs.
   description: >-
-    A design and implementation of an optical flow algorithm targeted at a 7.5W
+    A design and implement an optical flow algorithm targeted at a 7.5W
     TDP mobile system, capable of processing 4K resolution frames in realtime,
     24 fps.
     <br> <br>
@@ -12,6 +14,8 @@
     <br> <br>
     Award winner at the 2017 Carnegie Mellon Parallelism competition.
 - name: Touch Calculator
+  url: https://github.com/zhaorz/Touch-Calculator
+  repo: Touch-Calculator
   date: May 2015
   tags: [Python, macOS]
   brief: Vector-based handwriting recognition engine.
@@ -21,7 +25,16 @@
     <br> <br>
     Awarded 4th place at the Fundamentals of Programming and Computer Science
     showcase.
+- name: .dotfiles
+  url: https://github.com/zhaorz/.dotfiles
+  repo: .dotfiles
+  date: June 2017
+  brief: My configuration files
+  description: >-
+    Emacs, zsh, vim, tmux, and many more.
 - name: resume.pdf.js
+  url: https://github.com/zhaorz/resume.pdf.js
+  repo: resume.pdf.js
   date: July 2016
   tags: [Javascript]
   brief: Beautiful resumes. No headaches.
