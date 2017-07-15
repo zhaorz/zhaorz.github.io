@@ -53,16 +53,24 @@ article {
   font-size: 20px;
 }
 
-.post-list {
+.post-list, .project-list {
   margin-left: 0;
   list-style: none;
 
-  > .post {
+  > .post, .project {
     margin-bottom: $spacing-unit * 4;
+
+    .brief {
+      font-family: $serif-font-family;
+      font-style: italic;
+      font-size: 22px;
+      text-align: center;
+      color: $grey-color;
+    }
   }
 }
 
-.post-meta {
+.post-meta, .project-meta {
   margin-bottom: $spacing-unit / 2;
   display: inline block;
   margin-right: 10px;
@@ -85,13 +93,13 @@ article {
 
 /** Posts **/
 
-.post-header {
+.post-header, .project-header {
   margin-bottom: 5px;
   position: relative;
 
   @extend %clearfix;
 
-  .post-title {
+  .post-title, .project-title {
     margin-bottom: 0;
     float: left;
     color: $text-color;
@@ -99,7 +107,7 @@ article {
   }
 
 
-  .post-link {
+  .post-link, .project-link {
     float: left;
     color: $text-color;
 

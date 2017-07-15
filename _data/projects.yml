@@ -1,0 +1,30 @@
+- name: Flow on the Go
+  date: May 2017
+  tags: [CUDA, C++, ARM Neon]
+  brief: Fast, accurate optical flows on mobile GPUs.
+  description: >-
+    A design and implementation of an optical flow algorithm targeted at a 7.5W
+    TDP mobile system, capable of processing 4K resolution frames in realtime,
+    24 fps.
+    <br> <br>
+    We achieve a 1,250x speedup over OpenCV by using optimized GPU kernels,
+    multithreading, and fine-grained memory management.
+    <br> <br>
+    Award winner at the 2017 Carnegie Mellon Parallelism competition.
+- name: Touch Calculator
+  date: May 2015
+  tags: [Python, macOS]
+  brief: Vector-based handwriting recognition engine.
+  description: >-
+    Machine learning driven touchpad calculator, using a novel, vector-based
+    feature detection algorithm.
+    <br> <br>
+    Awarded 4th place at the Fundamentals of Programming and Computer Science
+    showcase.
+- name: resume.pdf.js
+  date: July 2016
+  tags: [Javascript]
+  brief: Beautiful resumes. No headaches.
+  description: >-
+    Write a yaml file. Outputs a pdf. No Adobe products needed. Looks better
+    too.

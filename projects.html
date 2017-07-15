@@ -1,32 +1,24 @@
 ---
-layout: narrow
-title: Projects
+layout: default
 permalink: /projects/
 ---
 
-<div class="horizontal divider"></div>
+<div class="project-list">
+  {% for project in site.data.projects %}
+  <div class="project">
 
-<table>
-  <tbody class="projects">
+    {% include project-header.html %}
 
-    <tr class="project">
+    <p class="brief">
+      {{ project.brief }}
+    </p>
 
-      <td class="thumbnail">
-        <div class="small image">
-          <img src="{{ site.baseurl }}/img/projects/calc.png">
-        </div>
-      </td>
+    <p class="project-description">
+      {% if project.description %}
+      {{ project.description }}
+      {% endif %}
+    </p>
 
-      <td class="content">
-        <h3>
-          <a href="#" class="header">
-            Touch Calculator
-          </a>
-        </h3>
-      </td>
-
-    </tr>
-
-  </tbody>
-</table>
-
+  </div>
+  {% endfor %}
+</div>
