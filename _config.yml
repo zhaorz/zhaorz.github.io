@@ -1,10 +1,10 @@
 # Site settings
 title:          Richard Zhao
-email:          richardz@andrew.cmu.edu
+email:          richard@rzhao.io
 description:
 
 baseurl:  "" # the subpath of your site, e.g. /blog
-url:      "http://richard-zhao.com" # the base hostname & protocol for your site
+url:      "https://rzhao.io" # the base hostname & protocol for your site
 
 google_analytics: 'UA-65056214-1'
 

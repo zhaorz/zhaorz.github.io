@@ -1,5 +1,5 @@
 - name: Flow on the Go
-  url: http://www.richard-zhao.com/FlowOnTheGo
+  url: http://rzhao.io/FlowOnTheGo
   repo: FlowOnTheGo
   date: May 2017
   tags: [CUDA, C++, ARM Neon]
